@@ -37,7 +37,7 @@ const thoughtController = {
               return res.status(404).json({ message: 'No user to connect this thought to!' });
             }
     
-            res.json({ message: 'Thought successfully created!' });
+            res.json({ message: 'Thought created!' });
           })
           .catch((err) => {
             console.log(err);
