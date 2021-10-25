@@ -1,6 +1,6 @@
 const { User } = require('../models');
 
-const userController ={
+const userController = {
     getAllUsers(req, res) {
         User.find({})
           .populate({
@@ -19,7 +19,7 @@ const userController ={
           });
     },
     getOneUser({ params }, res) {
-        User.findOne({ _id: params.id })
+        User.findOne({ _id: params.userId })
           .populate({
             path: 'thoughts',
             select: '-__v'
@@ -58,7 +58,7 @@ const userController ={
           .catch(err => res.status(400).json(err));
     },
     deleteUser({ params }, res) {
-        User.findOneAndDelete({ _id: params.id })
+        User.findOneAndDelete({ _id: params.userId })
         .then(dbUserData => {
             if (!dbUserData) {
             res.status(404).json({ message: 'No User found with this id!' });
@@ -68,6 +68,6 @@ const userController ={
         })
         .catch(err => res.status(400).json(err));
     }
-}
+};
 
 module.exports = userController;
