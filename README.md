@@ -1,4 +1,4 @@
-# WK18C-Social-Network-API
+# Social-Network-API
 
 ## Description
   This repo contains code for a "Social Network API". On my own, I was tasked with 
