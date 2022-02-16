@@ -28,7 +28,7 @@
 
 
   ## Usage
-  Following the installation steps will allow users to use the tech blog website as seen [here](https://watch.screencastify.com/v/Sn5BzC4SuML87qGe0uQ8)
+  Following the installation steps will allow users to use the tech blog website as seen here:
   
   https://watch.screencastify.com/v/Sn5BzC4SuML87qGe0uQ8
   
